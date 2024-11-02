@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-width contact background with consistent top spacing */
+.contact-background {
+  width: 100%;
+  max-width: 2440px; /* Match max width with other styles */
+  background-color: rgba(249, 245, 242, 1); /* Consistent background color */
+  padding: 68px 68px; /* Adjusted padding to match about.css and works.css */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #000; /* Consistent border style */
+  box-shadow: 5px 5px 0 #333; /* Shadow similar to works.css */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 68px; /* Extra spacing at the bottom */
+}
+
+/* Main container for the contact page */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1152px;
+  width: 100%;
+  background-color: #ffffff; /* White background for content */
+  padding: 30px;
+  border: 2px solid #000; /* Consistent border style */
+  box-shadow: 3px 3px 0 #333; /* Neo-brutalist shadow */
+  border-radius: 10px;
+  gap: 40px; /* Space between text and form sections */
+  margin-top: 98px;
+  margin-bottom: 10px;
+}
+
+/* Left Text Section */
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Right Form Section */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Row for paired inputs */
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 #000; /* Shadow for inputs and textarea */
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffcb87;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.contact-form button:hover {
+  background-color: #f0b45a;
+}
+

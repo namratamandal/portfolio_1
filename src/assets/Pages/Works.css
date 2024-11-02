@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-width background wrapper */
+.background-wrapper {
+  width: 100%;
+  background-color: rgba(249, 245, 242, 1); /* Consistent background color */
+  padding: 68px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px; /* Space between each project container */
+}
+
+/* Project container styling */
+.project-container {
+  display: flex;
+  max-width: 1152px;
+  width: 90%; /* Slight padding on the sides for smaller screens */
+  background-color: #ffffff; /* White background for each project */
+  padding: 30px;
+  border: 2px solid #000; /* Consistent border style */
+  box-shadow: 2px 2px 0 #333; /* Soft shadow for neo-brutalist look */
+  border-radius: 10px;
+  gap: 30px;
+}
+
+/* Text section inside each project container */
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Project heading styling */
+.project-heading {
+  font-size: 22px;
+  font-weight: 900;
+  color: #000;
+  background-color: rgb(246, 197, 160); /* Highlight background color */
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 0 #333; /* Reduced shadow */
+}
+
+/* Project paragraph styling */
+.project-paragraph {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  padding: 15px;
+  background-color: #f9f5f2; /* Neutral background for text */
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #333; /* Consistent shadow */
+  border-radius: 5px;
+  text-align: justify;
+}
+
+/* Image section styling */
+.project-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project image styling */
+.project-photo {
+  width: 520px;
+  max-width: 520px;
+  height: 540px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #333; /* Consistent shadow for images */
+  border: 2px solid #000; /* Bold border around image */
+  margin-top: 50px;
+}

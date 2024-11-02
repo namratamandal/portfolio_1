@@ -1,0 +1,13 @@
+/* Global styles for the app */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  overflow-x: hidden;
+  font-size: 18px; /* Default font size for desktop */
+}
+

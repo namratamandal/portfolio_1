@@ -1,0 +1,117 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 68px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+/* Left Section Styling */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Connect Box Styling */
+.connect-box {
+  background-color: #ffcb87;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 0px 2px #000000;
+  width: 374px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-text {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.project-info {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 756px;
+  text-align: left;
+  padding-top: 68px;
+}
+
+.footer-note {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 68px;
+  margin-bottom: -16px;
+}
+
+/* Footer Links Styling */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 24px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Hover Animations in Footer */
+
+/* Scale-Up on Hover for Connect Box */
+.connect-box:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Slight Color Change and Scale on Hover for Footer Links */
+.footer-link {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: scale(1.1);
+  color: #e0a845; /* Adds a warm tone on hover */
+}
+
+/* Scale-Up on Hover for Footer Note */
+.footer-note:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Footer Icon Hover Effect */
+.footer-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+

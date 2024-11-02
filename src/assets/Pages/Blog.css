@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-width blog background with spacing similar to works.css */
+.blog-background {
+  width: 100%;
+  
+  padding: 68px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px; /* Space between each blog container */
+}
+
+/* Blog container styling */
+.blog-container {
+  display: flex;
+  max-width: 1152px;
+  width: 100%;
+  background-color: #ffffff; /* White background for each blog */
+  padding: 30px;
+  border: 3px solid #000; /* Bold border around each blog entry */
+  box-shadow: 4px 4px 0 #333; /* Consistent shadow */
+  border-radius: 10px;
+  gap: 20px; /* Space between image and text */
+  margin-bottom: 40px; /* Space between blog entries */
+}
+
+/* Image section for each blog */
+.blog-image {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blog image styling */
+.thumbnail1, .thumbnail2, .thumbnail3 {
+  width: auto;
+ margin: 0%;
+  max-height: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 #333; /* Consistent shadow for images */
+  border: 3px solid #000; /* Bold border around image */
+  padding: 0%;
+}
+
+/* Text section inside each blog container */
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Blog heading styling */
+.blog-heading {
+  font-size: 22px;
+  font-weight: 900;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
+  background-color: rgb(246, 197, 160); /* Highlight background color */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 0 #333;
+  margin-bottom: 10px;
+  margin-top:80px;
+}
+
+.blog1{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Blog content paragraph styling */
+.blog-content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f9f5f2; /* Neutral background for text */
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Set max width */
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: auto; /* Aligns it to the left */
+  align-self: flex-start; /* Ensures alignment within the flex container */
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #000;
+  box-shadow: 2px 2px 0 #333;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px; /* Adjust play button size */
+  height: 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover .play-button {
+  opacity: 1;
+}
+
+.video-caption{
+  margin-top: 50px;
+  justify-content: center;
+text-align: center;
+box-shadow: #000;
+}

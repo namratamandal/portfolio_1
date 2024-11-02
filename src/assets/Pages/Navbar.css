@@ -1,0 +1,90 @@
+/* Global reset and content wrapper */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter-Regular", Helvetica;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 1152px; 
+  margin: 0 auto;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 1152px;
+  height: 72px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1152px;
+  height: 72px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 1px 1px 0px 2px #000000;
+  margin-left: 28px;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 18px;
+}
+
+.navbar-link {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding-inline: 15px;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+/* Hover effect */
+.navbar-link:hover {
+  color: #3a7bd5; /* Change color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active Link Styling */
+.navbar-link.active {
+  color: #3a7bd5;
+  font-weight: bold;
+}
+
+/* Underline for active link */
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3a7bd5;
+}
