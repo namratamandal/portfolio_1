@@ -1,13 +1,20 @@
+/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Full-width blog background with spacing similar to works.css */
+body {
+  font-family: "Inter-Regular", Arial, sans-serif;
+  background-color: #f5f5f5; /* Light background for a clean layout */
+  color: #333; /* Neutral text color */
+  line-height: 1.6;
+}
+
+/* Full-width blog background with spacing */
 .blog-background {
   width: 100%;
-  
   padding: 68px 0;
   display: flex;
   flex-direction: column;
@@ -27,78 +34,32 @@
   border-radius: 10px;
   gap: 20px; /* Space between image and text */
   margin-bottom: 40px; /* Space between blog entries */
+  align-items: flex-start; /* Aligns image and text to the top */
 }
 
 /* Image section for each blog */
 .blog-image {
-  
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Ensures alignment to the top */
   justify-content: center;
 }
 
 /* Blog image styling */
-.thumbnail1, .thumbnail2, .thumbnail3 {
+.thumbnail {
   width: auto;
- margin: 0%;
   max-height: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 2px 2px 0 #333; /* Consistent shadow for images */
+  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
   border: 3px solid #000; /* Bold border around image */
-  padding: 0%;
 }
 
-/* Text section inside each blog container */
-.text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Blog heading styling */
-.blog-heading {
-  font-size: 22px;
-  font-weight: 900;
-  border: 2px solid #000;
-  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
-  background-color: rgb(246, 197, 160); /* Highlight background color */
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 2px 2px 0 #333;
-  margin-bottom: 10px;
-  margin-top:80px;
-}
-
-.blog1{
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Blog content paragraph styling */
-.blog-content {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  padding: 10px;
-  background-color: #f9f5f2; /* Neutral background for text */
-  border: 2px solid #000;
-  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
-  border-radius: 5px;
-  text-align: justify;
-}
-
+/* Video-specific styling */
 .video-thumbnail {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Set max width */
+  max-width: 400px; /* Adjust to match other thumbnails */
   cursor: pointer;
-  margin-top: 20px;
-  margin-right: auto; /* Aligns it to the left */
-  align-self: flex-start; /* Ensures alignment within the flex container */
 }
 
 .thumbnail-image {
@@ -106,7 +67,7 @@
   height: auto;
   border-radius: 10px;
   border: 3px solid #000;
-  box-shadow: 2px 2px 0 #333;
+  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
 }
 
 .play-button {
@@ -116,17 +77,187 @@
   width: 50px; /* Adjust play button size */
   height: 50px;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .video-thumbnail:hover .play-button {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1); /* Slight zoom effect on hover */
 }
 
-.video-caption{
-  margin-top: 50px;
+/* Text section inside each blog container */
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+}
+
+/* Blog heading styling */
+.blog-heading {
+  font-size: 22px;
+  font-weight: 900;
+  border: 2px solid #000;
+  background-color: rgb(246, 197, 160); /* Highlight background color */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Blog metadata and content styling */
+.blog1 {
   justify-content: center;
-text-align: center;
-box-shadow: #000;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.blog-content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f9f5f2; /* Neutral background for text */
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #333; /* Consistent shadow */
+  border-radius: 5px;
+  text-align: justify;
+}
+
+/* Vertical layout for video and additional images */
+.vertical-content {
+  display: flex;
+  flex-direction: column;
+  align-items: led=ft;
+  gap: 20px; /* Space between video and images */
+  margin-top: 20px;
+}
+
+.vertical-thumbnail {
+  max-width: 400px; /* Limit width for consistency */
+  width: 100%; /* Make it responsive */
+  border: 3px solid #000; /* Bold border for neo-brutalist look */
+  border-radius: 10px; /* Slight rounded corners */
+  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Actions Section (Likes, Comments, Emojis) */
+.blog-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons for likes, comments, and emojis */
+.blog-actions button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.blog-actions button:hover {
+  background-color: #eaeaea;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Highlight active buttons */
+.blog-actions button:active {
+  background-color: #dcdcdc;
+  transform: translateY(0); /* Reset lift effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .blog-heading {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .blog-content {
+    font-size: 14px; /* Adjust content size */
+  }
+
+  .thumbnail {
+    max-height: 300px; /* Adjust image size for smaller screens */
+  }
+
+  .vertical-thumbnail {
+    max-width: 100%; /* Make the vertical images responsive */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-heading {
+    font-size: 18px;
+  }
+
+  .blog-content {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    max-height: 250px;
+  }
+
+  .blog-actions button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+/* Comment Section Styling */
+.comment-section {
+  display: flex; /* Align input and button side by side */
+  align-items: center; /* Vertically align items */
+  gap: 10px; /* Space between input and button */
+  margin-top: 20px;
+}
+
+.comment-section input {
+  flex: 1; /* Allow the input to grow */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 #000; /* Match neo-brutalist style */
+}
+
+.comment-section button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #96c9ff; /* Base blue color */
+  color: #ffffff; /* White text */
+  border: 3px solid #000; /* Black bold border */
+  border-radius: 5px; /* Slight rounded corners */
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #000; /* Neo-brutalist shadow */
+  transition: all 0.2s ease; /* Smooth transition for hover effect */
+  text-transform: uppercase; /* Capitalized text for bold effect */
+}
+
+.comment-section button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 8px 8px 0 #000; /* Enlarged shadow */
+  transform: translate(-2px, -2px); /* Slight lift effect */
+}
+
+.comment-section button:active {
+  background-color: #003f7f; /* Even darker blue when active */
+  box-shadow: 4px 4px 0 #000; /* Reduced shadow */
+  transform: translate(2px, 2px); /* Push down effect */
 }
