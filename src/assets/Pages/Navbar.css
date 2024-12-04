@@ -1,90 +1,78 @@
 /* Global reset and content wrapper */
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter-Regular", Helvetica;
-  box-sizing: border-box;
+  margin: 0; /* Resetting margin to 0 */
+  padding: 0; /* Resetting padding to 0 */
+  font-family: "Inter-Regular", Helvetica; /* Setting default font family */
+  box-sizing: border-box; /* Ensuring box sizing includes padding and borders */
 }
 
 .content-wrapper {
-  max-width: 1152px; 
-  margin: 0 auto;
+  max-width: 1152px; /* Setting maximum width for content wrapper */
+  margin: 0 auto; /* Centering the content wrapper horizontally */
 }
 
 /* Navbar styling */
 .navbar {
-  width: 1152px;
-  height: 72px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  margin-top: 38px;
-  margin-bottom: 30px;
+  width: 1152px; /* Defining width for the navbar */
+  height: 72px; /* Defining height for the navbar */
+  background-color: #ffffff; /* Setting background color of navbar */
+  display: flex; /* Using flexbox layout */
+  align-items: center; /* Aligning items vertically to the center */
+  margin-top: 38px; /* Adding top margin to the navbar */
+  margin-bottom: 30px; /* Adding bottom margin to the navbar */
 }
 
 .navbar-container {
-  width: 100%;
-  max-width: 1152px;
-  height: 72px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 36px;
-  margin: 0 auto;
-  border-radius: 25px;
-  box-shadow: 2px 2px 2px 2px #000000;
+  width: 100%; /* Making navbar container take full width */
+  max-width: 1152px; /* Limiting max width of navbar container */
+  height: 72px; /* Defining height for navbar container */
+  background-color: #ffffff; /* Setting background color for navbar container */
+  display: flex; /* Using flexbox layout */
+  align-items: center; /* Aligning items vertically to the center */
+  justify-content: space-between; /* Distributing items with space between */
+  padding: 0 36px; /* Adding horizontal padding */
+  margin: 0 auto; /* Centering navbar container horizontally */
+  border-radius: 25px; /* Rounding the corners of the navbar container */
+  box-shadow: 2px 2px 2px 2px #000000; /* Adding shadow around navbar container */
 }
 
 /* Logo Styling */
 .navbar-logo {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 1px 1px 0px 2px #000000;
-  margin-left: 28px;
+  height: 48px; /* Setting height of the logo */
+  width: 48px; /* Setting width of the logo */
+  border-radius: 50%; /* Making the logo circular */
+  object-fit: cover; /* Ensuring the logo covers the area without distortion */
+  box-shadow: 1px 1px 0px 2px #000000; /* Adding shadow around the logo */
+  margin-left: 28px; /* Adding left margin to logo */
 }
 
 /* Navigation Links */
 .navbar-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin: 18px;
+  list-style: none; /* Removing default list styling */
+  display: flex; /* Using flexbox for navigation links */
+  align-items: center; /* Aligning navigation links vertically to the center */
+  gap: 30px; /* Adding gap between navigation links */
+  margin: 18px; /* Adding margin around the navigation links */
 }
 
 .navbar-link {
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 500;
-  color: #000000;
-  text-decoration: none;
-  padding-inline: 15px;
-  transition: color 0.3s, transform 0.3s;
-  position: relative;
+  font-family: "Inter-Regular", Helvetica; /* Setting font for navigation links */
+  font-size: 16px; /* Defining font size for navigation links */
+  font-weight: 500; /* Setting font weight for navigation links */
+  color: #000000; /* Setting text color for navigation links */
+  text-decoration: none; /* Removing underline from navigation links */
+  padding-inline: 15px; /* Adding horizontal padding to links */
+  transition: color 0.3s, transform 0.3s; /* Adding smooth transition for color and transform */
+  position: relative; /* Setting position relative for positioning child elements */
 }
 
 /* Hover effect */
 .navbar-link:hover {
-  color: #3a7bd5; /* Change color on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  color: #92b8ee; /* Changing color to blue on hover */
+  transform: translateY(-2px); /* Slightly lifting the link on hover */
 }
 
 /* Active Link Styling */
 .navbar-link.active {
-  color: #3a7bd5;
-  font-weight: bold;
-}
-
-/* Underline for active link */
-.navbar-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #3a7bd5;
+  color: #92b8ee; /* Setting blue color for active link */
 }

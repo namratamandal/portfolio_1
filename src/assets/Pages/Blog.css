@@ -1,180 +1,178 @@
-/* Reset and global styles */
+/* Resetting margin, padding, and box-sizing for all elements to ensure uniform layout across all browsers */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+  box-sizing: border-box; /* Ensures padding and border are included in element's width and height */
 }
 
 body {
-  font-family: "Inter-Regular", Arial, sans-serif;
+  font-family: "Inter-Regular", Arial, sans-serif; /* Defines the font family for the body text */
   background-color: #f5f5f5; /* Light background for a clean layout */
   color: #333; /* Neutral text color */
-  line-height: 1.6;
+  line-height: 1.6; /* Sets line height for better readability */
 }
 
 /* Full-width blog background with spacing */
 .blog-background {
-  width: 100%;
-  padding: 68px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%; /* Makes the background take up the full width of the screen */
+  padding: 68px 0; /* Adds vertical padding above and below the blog */
+  display: flex; /* Uses flexbox for flexible layout */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers content horizontally */
   gap: 68px; /* Space between each blog container */
 }
 
 /* Blog container styling */
 .blog-container {
-  display: flex;
-  max-width: 1152px;
-  width: 100%;
+  display: flex; /* Uses flexbox to lay out content */
+  max-width: 1152px; /* Limits the maximum width of the blog container */
+  width: 100%; /* Makes the container take full width of its parent */
   background-color: #ffffff; /* White background for each blog */
-  padding: 30px;
-  border: 3px solid #000; /* Bold border around each blog entry */
-  box-shadow: 4px 4px 0 #333; /* Consistent shadow */
-  border-radius: 10px;
-  gap: 20px; /* Space between image and text */
-  margin-bottom: 40px; /* Space between blog entries */
-  align-items: flex-start; /* Aligns image and text to the top */
+  padding: 30px; /* Adds space inside the container */
+  border: 3px solid #000; /* Bold black border around each blog entry */
+  box-shadow: 4px 4px 0 #333; /* Adds a shadow effect for a subtle 3D effect */
+  border-radius: 10px; /* Rounds the corners of the container */
+  gap: 20px; /* Adds space between the image and the text section */
+  margin-bottom: 40px; /* Adds space below each blog entry */
+  align-items: flex-start; /* Aligns content to the top */
 }
 
 /* Image section for each blog */
 .blog-image {
-  display: flex;
-  align-items: flex-start; /* Ensures alignment to the top */
-  justify-content: center;
+  display: flex; /* Uses flexbox for layout */
+  align-items: flex-start; /* Aligns images to the top of the container */
+  justify-content: center; /* Centers images horizontally */
 }
 
 /* Blog image styling */
 .thumbnail {
-  width: auto;
-  max-height: 400px;
-  height: auto;
-  border-radius: 10px;
+  width: auto; /* Automatically adjusts width */
+  max-height: 400px; /* Limits the height of images */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounds the corners of the image */
   box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
-  border: 3px solid #000; /* Bold border around image */
+  border: 3px solid #000; /* Bold black border around image */
 }
 
 /* Video-specific styling */
 .video-thumbnail {
-  position: relative;
-  width: 100%;
-  max-width: 400px; /* Adjust to match other thumbnails */
-  cursor: pointer;
+  position: relative; /* Positions video thumbnail relative to the container */
+  width: 100%; /* Makes the thumbnail take full width of its container */
+  max-width: 400px; /* Limits the maximum width of the video thumbnail */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
 }
 
 .thumbnail-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 3px solid #000;
-  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
+  width: 100%; /* Makes the thumbnail image take full width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounds the corners of the image */
+  border: 3px solid #000; /* Bold border around the image */
+  box-shadow: 4px 4px 0 #333; /* Neo-brutalist shadow effect */
 }
 
 .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px; /* Adjust play button size */
-  height: 50px;
-  transform: translate(-50%, -50%);
-  opacity: 0.8;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute; /* Positions the play button over the video thumbnail */
+  top: 50%; /* Centers the button vertically */
+  left: 50%; /* Centers the button horizontally */
+  width: 50px; /* Sets the width of the play button */
+  height: 50px; /* Sets the height of the play button */
+  transform: translate(-50%, -50%); /* Precisely centers the button */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Adds smooth transitions for opacity and scale */
 }
 
 .video-thumbnail:hover .play-button {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.1); /* Slight zoom effect on hover */
+  opacity: 1; /* Makes the button fully visible on hover */
+  transform: translate(-50%, -50%) scale(1.1); /* Slightly zooms in the button on hover */
 }
 
 /* Text section inside each blog container */
 .text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  flex: 1; /* Allows the text section to grow and fill available space */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Stacks content vertically */
   justify-content: flex-start; /* Aligns content to the top */
 }
 
 /* Blog heading styling */
 .blog-heading {
-  font-size: 22px;
-  font-weight: 900;
-  border: 2px solid #000;
+  font-size: 22px; /* Large font size for blog title */
+  font-weight: 900; /* Bold font weight for emphasis */
+  border: 2px solid #000; /* Border around the heading */
   background-color: rgb(246, 197, 160); /* Highlight background color */
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 2px 2px 0 #333; /* Consistent shadow */
-  margin-bottom: 10px;
-  margin-top: 20px;
+  padding: 10px; /* Adds padding inside the heading */
+  border-radius: 5px; /* Rounds the corners of the heading */
+  text-align: center; /* Centers the heading text */
+  box-shadow: 2px 2px 0 #333; /* Adds a subtle shadow effect */
+  margin-bottom: 10px; /* Adds space below the heading */
+  margin-top: 20px; /* Adds space above the heading */
 }
 
 /* Blog metadata and content styling */
 .blog1 {
-  justify-content: center;
-  text-align: center;
-  margin-top: 10px;
-  font-style: italic;
-  font-size: 14px;
+  justify-content: center; /* Centers metadata content */
+  text-align: center; /* Centers metadata text */
+  margin-top: 10px; /* Adds space above the metadata */
+  font-style: italic; /* Italicizes the metadata */
+  font-size: 14px; /* Sets the font size for metadata */
 }
 
 .blog-content {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  padding: 10px;
-  background-color: #f9f5f2; /* Neutral background for text */
-  border: 2px solid #000;
-  box-shadow: 4px 4px 0 #333; /* Consistent shadow */
-  border-radius: 5px;
-  text-align: justify;
+  font-size: 16px; /* Sets the font size for the blog content */
+  color: #333; /* Neutral text color */
+  line-height: 1.6; /* Increases line height for readability */
+  padding: 10px; /* Adds padding inside the content */
+  background-color: #f9f5f2; /* Light background color for the content */
+  border: 2px solid #000; /* Border around the content */
+  box-shadow: 4px 4px 0 #333; /* Consistent shadow for neo-brutalist style */
+  border-radius: 5px; /* Rounds the corners of the content box */
+  text-align: justify; /* Justifies the text for even alignment */
 }
 
 /* Vertical layout for video and additional images */
 .vertical-content {
-  display: flex;
-  flex-direction: column;
-  align-items: led=ft;
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Centers images and content */
   gap: 20px; /* Space between video and images */
-  margin-top: 20px;
+  margin-top: 20px; /* Adds space above the vertical section */
 }
 
 .vertical-thumbnail {
-  max-width: 400px; /* Limit width for consistency */
-  width: 100%; /* Make it responsive */
-  border: 3px solid #000; /* Bold border for neo-brutalist look */
-  border-radius: 10px; /* Slight rounded corners */
-  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 400px; /* Limits the width of vertical images */
+  width: 100%; /* Makes the images responsive */
+  border: 3px solid #000; /* Bold border for neo-brutalist style */
+  border-radius: 10px; /* Rounds the corners of the images */
+  box-shadow: 4px 4px 0 #333; /* Consistent shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
 }
-
 
 /* Actions Section (Likes, Comments, Emojis) */
 .blog-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  display: flex; /* Uses flexbox for layout */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Adds space above the actions section */
 }
 
 /* Buttons for likes, comments, and emojis */
 .blog-actions button {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  background-color: #f9f9f9; /* Light background for the buttons */
+  border: 1px solid #ddd; /* Light border around the buttons */
+  border-radius: 5px; /* Rounds the corners of the buttons */
+  padding: 5px 10px; /* Adds padding inside the button */
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+  font-size: 14px; /* Sets the font size for the buttons */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition for background and scale effects */
 }
 
 /* Hover effect for buttons */
 .blog-actions button:hover {
-  background-color: #eaeaea;
+  background-color: #eaeaea; /* Changes background color on hover */
   transform: translateY(-2px); /* Slight lift effect */
 }
 
 /* Highlight active buttons */
 .blog-actions button:active {
-  background-color: #dcdcdc;
+  background-color: #dcdcdc; /* Darker background when active */
   transform: translateY(0); /* Reset lift effect */
 }
 
@@ -197,23 +195,29 @@ body {
   }
 
   .vertical-thumbnail {
-    max-width: 100%; /* Make the vertical images responsive */
+    max-width: 100%; /* Make vertical images responsive */
   }
 }
 
+
+/* Responsive Styling for Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
+  /* Adjusts the blog heading font size for small screens */
   .blog-heading {
     font-size: 18px;
   }
 
+  /* Reduces the blog content font size for smaller devices */
   .blog-content {
     font-size: 12px;
   }
 
+  /* Limits the maximum height of the thumbnail images for smaller screens */
   .thumbnail {
     max-height: 250px;
   }
 
+  /* Adjusts the font size and padding for buttons in blog actions section */
   .blog-actions button {
     font-size: 12px;
     padding: 5px;
@@ -222,42 +226,51 @@ body {
 
 /* Comment Section Styling */
 .comment-section {
-  display: flex; /* Align input and button side by side */
+  /* Flexbox for aligning the comment input and button side by side */
+  display: flex;
   align-items: center; /* Vertically align items */
   gap: 10px; /* Space between input and button */
-  margin-top: 20px;
+  margin-top: 20px; /* Adds margin above the comment section */
 }
 
 .comment-section input {
-  flex: 1; /* Allow the input to grow */
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 4px 4px 0 #000; /* Match neo-brutalist style */
+  /* Makes the input field flexible and it grows to fill available space */
+  flex: 1;
+  padding: 8px; /* Adds padding inside the input field */
+  border: 1px solid #ddd; /* Light border for the input field */
+  border-radius: 5px; /* Rounded corners for input */
+  box-shadow: 4px 4px 0 #000; /* Shadow to match the neo-brutalist theme */
 }
 
 .comment-section button {
+  /* Padding inside the button */
   padding: 10px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #96c9ff; /* Base blue color */
-  color: #ffffff; /* White text */
-  border: 3px solid #000; /* Black bold border */
+  font-size: 14px; /* Font size for the button text */
+  font-weight: bold; /* Makes the button text bold */
+  background-color: #96c9ff; /* Light blue background for button */
+  color: #ffffff; /* White text color */
+  border: 3px solid #000; /* Bold black border */
   border-radius: 5px; /* Slight rounded corners */
-  cursor: pointer;
-  box-shadow: 6px 6px 0 #000; /* Neo-brutalist shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 6px 6px 0 #000; /* Shadow to match the neo-brutalist theme */
   transition: all 0.2s ease; /* Smooth transition for hover effect */
   text-transform: uppercase; /* Capitalized text for bold effect */
 }
 
 .comment-section button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 8px 8px 0 #000; /* Enlarged shadow */
-  transform: translate(-2px, -2px); /* Slight lift effect */
+  /* Darkens the button background on hover */
+  background-color: #0056b3;
+  /* Enlarges the shadow for a hover effect */
+  box-shadow: 8px 8px 0 #000;
+  /* Adds a slight lift effect when hovered */
+  transform: translate(-2px, -2px);
 }
 
 .comment-section button:active {
-  background-color: #003f7f; /* Even darker blue when active */
-  box-shadow: 4px 4px 0 #000; /* Reduced shadow */
-  transform: translate(2px, 2px); /* Push down effect */
+  /* Even darker blue background when button is pressed */
+  background-color: #003f7f;
+  /* Reduces the shadow when the button is active */
+  box-shadow: 4px 4px 0 #000;
+  /* Pushes the button down when pressed */
+  transform: translate(2px, 2px);
 }

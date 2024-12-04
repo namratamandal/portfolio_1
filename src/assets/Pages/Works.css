@@ -1,83 +1,83 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Resetting margin to 0 */
+  padding: 0; /* Resetting padding to 0 */
+  box-sizing: border-box; /* Ensuring box sizing includes padding and borders */
 }
 
 /* Full-width background wrapper */
 .background-wrapper {
-  width: 100%;
-  background-color: rgba(249, 245, 242, 1); /* Consistent background color */
-  padding: 68px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 68px; /* Space between each project container */
+  width: 100%; /* Setting width to 100% for full container width */
+  background-color: rgba(249, 245, 242, 1); /* Setting consistent background color */
+  padding: 68px 0; /* Adding vertical padding for spacing */
+  display: flex; /* Using flexbox layout */
+  flex-direction: column; /* Arranging content in a column */
+  align-items: center; /* Center-aligning items horizontally */
+  gap: 68px; /* Adding space between each project container */
 }
 
 /* Project container styling */
 .project-container {
-  display: flex;
-  max-width: 1152px;
+  display: flex; /* Using flexbox layout for project container */
+  max-width: 1152px; /* Limiting max width of project container */
   width: 90%; /* Slight padding on the sides for smaller screens */
-  background-color: #ffffff; /* White background for each project */
-  padding: 30px;
-  border: 2px solid #000; /* Consistent border style */
-  box-shadow: 2px 2px 0 #333; /* Soft shadow for neo-brutalist look */
-  border-radius: 10px;
-  gap: 30px;
+  background-color: #ffffff; /* Setting white background for each project */
+  padding: 30px; /* Adding padding inside the project container */
+  border: 2px solid #000; /* Adding consistent border style */
+  box-shadow: 2px 2px 0 #333; /* Applying a soft shadow for a neo-brutalist look */
+  border-radius: 10px; /* Rounding the corners of the project container */
+  gap: 30px; /* Adding gap between text and image sections */
 }
 
 /* Text section inside each project container */
 .text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1; /* Allowing the text section to grow and take available space */
+  display: flex; /* Using flexbox layout */
+  flex-direction: column; /* Arranging text content in a column */
+  justify-content: center; /* Centering text content vertically */
 }
 
 /* Project heading styling */
 .project-heading {
-  font-size: 22px;
-  font-weight: 900;
-  color: #000;
-  background-color: rgb(246, 197, 160); /* Highlight background color */
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid #000;
-  text-align: center;
-  margin-bottom: 15px;
-  box-shadow: 2px 2px 0 #333; /* Reduced shadow */
+  font-size: 22px; /* Setting font size for project heading */
+  font-weight: 900; /* Making the font bold */
+  color: #000; /* Setting text color to black */
+  background-color: rgb(246, 197, 160); /* Highlighting background color */
+  padding: 10px; /* Adding padding around the heading */
+  border-radius: 5px; /* Rounding corners of the heading */
+  border: 2px solid #000; /* Adding border around the heading */
+  text-align: center; /* Center-aligning the text */
+  margin-bottom: 15px; /* Adding bottom margin */
+  box-shadow: 2px 2px 0 #333; /* Applying reduced shadow */
 }
 
 /* Project paragraph styling */
 .project-paragraph {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  padding: 15px;
-  background-color: #f9f5f2; /* Neutral background for text */
-  border: 2px solid #000;
-  box-shadow: 3px 3px 0 #333; /* Consistent shadow */
-  border-radius: 5px;
-  text-align: justify;
+  font-size: 16px; /* Setting font size for project paragraph */
+  color: #333; /* Setting text color to dark gray */
+  line-height: 1.6; /* Adjusting line height for readability */
+  padding: 15px; /* Adding padding inside the paragraph */
+  background-color: #f9f5f2; /* Applying neutral background for text */
+  border: 2px solid #000; /* Adding border around the paragraph */
+  box-shadow: 3px 3px 0 #333; /* Applying consistent shadow */
+  border-radius: 5px; /* Rounding corners of the paragraph */
+  text-align: justify; /* Justifying the paragraph text */
 }
 
 /* Image section styling */
 .project-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1; /* Allowing the image section to grow and take available space */
+  display: flex; /* Using flexbox layout */
+  align-items: center; /* Center-aligning image horizontally */
+  justify-content: center; /* Center-aligning image vertically */
 }
 
 /* Project image styling */
 .project-photo {
-  width: 520px;
-  max-width: 520px;
-  height: 540px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 0 #333; /* Consistent shadow for images */
-  border: 2px solid #000; /* Bold border around image */
-  margin-top: 50px;
+  width: 520px; /* Setting width of the project image */
+  max-width: 520px; /* Limiting the maximum width of the image */
+  height: 540px; /* Setting height of the project image */
+  border-radius: 10px; /* Rounding corners of the image */
+  box-shadow: 4px 4px 0 #333; /* Applying consistent shadow around the image */
+  border: 2px solid #000; /* Adding bold border around the image */
+  margin-top: 50px; /* Adding top margin for spacing */
 }

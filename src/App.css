@@ -1,13 +1,12 @@
 /* Global styles for the app */
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  overflow-x: hidden;
-  font-size: 18px; /* Default font size for desktop */
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  width: 100%; /* Setting the width to 100% of the viewport */
+  display: flex; /* Using flexbox to align the content */
+  justify-content: center; /* Center-aligning content horizontally */
+  background-color: #ffffff; /* Setting background color to white */
+  font-family: "Inter-Regular", Helvetica; /* Using Inter-Regular font for text */
+  overflow-x: hidden; /* Hiding horizontal overflow */
+  font-size: 18px; /* Setting default font size for desktop */
 }
-

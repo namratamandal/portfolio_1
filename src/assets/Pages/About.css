@@ -1,96 +1,106 @@
+/* Resetting margin, padding, and box-sizing for all elements to ensure uniform layout across all browsers */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.logo{
+/* Flexbox layout for logos (though not used directly here, it’s defined for consistency) */
+.logo {
   display: flex;
   display: flexbox;
 }
 
-.sunlogo{
-  width: 100px;
-  height: auto;
+/* Style for sun logo */
+.sunlogo {
+  width: 100px; /* Sets a fixed width for the sun logo */
+  height: auto; /* Maintains the aspect ratio of the logo */
 }
 
 /* Full-width background wrapper */
 .background-wrapper {
-  margin-top: 100px;
-  width: 100%;
-  max-width: 2440px;
-  background-color: rgba(249, 245, 242, 1); /* Full-width background color */
-  padding-top: 68px;
-  padding-bottom: 68px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  justify-content: center; /* Center the content container */
-  border-radius: 20px;
-  box-shadow: 2px 2px 0px 4px #000000;
-  margin-bottom: 8px;
+  margin-top: 100px; /* Adds space from the top of the page */
+  width: 100%; /* Ensures full width */
+  max-width: 2440px; /* Restricts maximum width for larger screens */
+  background-color: rgba(249, 245, 242, 1); /* Light background color to create a subtle effect */
+  padding-top: 68px; /* Adds padding to the top for spacing */
+  padding-bottom: 68px; /* Adds padding to the bottom for spacing */
+  padding-left: 30px; /* Adds padding to the left side */
+  padding-right: 30px; /* Adds padding to the right side */
+  display: flex; /* Flexbox layout for centering content */
+  justify-content: center; /* Centers the content horizontally */
+  border-radius: 20px; /* Rounded corners for the wrapper */
+  box-shadow: 2px 2px 0px 4px #000000; /* Adds a subtle shadow effect for depth */
+  margin-bottom: 8px; /* Adds space below the wrapper */
 }
 
 /* Centered container with limited width */
 .container {
-  display: flex;
-  max-width: 1152px;
-  width: 100%;
-  gap: 68px;
-  text-align: justify;
-  padding: 0 !important;
+  display: flex; /* Flexbox layout to arrange content horizontally */
+  max-width: 1152px; /* Restricts container width for a clean layout */
+  width: 100%; /* Full width for smaller screens */
+  gap: 68px; /* Adds space between text and photo sections */
+  text-align: justify; /* Justifies text for a clean and professional look */
+  padding: 0 !important; /* Removes any default padding */
 }
 
+/* Section for text content */
 .text-section {
-  flex: 1;
+  flex: 1; /* Allows text section to grow and take up available space */
 }
 
+/* Styling for the "About me" heading */
 .aboutmeheading {
-  justify-content: center;
-  justify-items: center;
-  width: 190px;
-  height: 48px;
-  color: black;
-  font-weight: 900;
-  box-shadow: 2px 2px 0px 4px #000000;
-  background-color: rgb(246, 197, 160);
-  border-radius: 5px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  justify-content: center; /* Centers the content inside the heading */
+  justify-items: center; /* Centers the content */
+  width: 190px; /* Sets the width of the heading box */
+  height: 48px; /* Sets the height of the heading box */
+  color: black; /* Black color for text */
+  font-weight: 900; /* Bold weight for emphasis */
+  box-shadow: 2px 2px 0px 4px #000000; /* Adds a subtle shadow effect to the box */
+  background-color: rgb(246, 197, 160); /* Light background color for the heading */
+  border-radius: 5px; /* Rounded corners for the heading box */
+  text-align: center; /* Centers the heading text */
+  margin-bottom: 20px; /* Adds space below the heading */
+  margin-left: 30px; /* Adds space from the left side */
 }
 
+/* Padding for the heading text */
 .aboutmeheadingtext {
-  padding-top: 5px;
+  padding-top: 5px; /* Adds space at the top of the text */
 }
 
+/* Styling for the About Me paragraph */
 .aboutmeparagraph {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-left: 30px;
-  
+  font-size: 16px; /* Sets the font size */
+  line-height: 1.6; /* Increases line spacing for readability */
+  color: #333; /* Dark grey text color for better readability */
+  margin-left: 30px; /* Adds space from the left side of the paragraph */
 }
 
 /* Style for the inline logo inside the paragraph */
 .inline-logo {
-  width: 40px; /* Adjust width as needed */
-  height: auto;
-  vertical-align: middle; /* Aligns logo with the text */
-  margin-left: 5px; /* Adds space after "Hello" */
-  margin-right: 5px; /* Adds space between logo and following text */
+  width: 40px; /* Adjusts the logo width */
+  height: auto; /* Maintains aspect ratio of the logo */
+  vertical-align: middle; /* Aligns the logo with the text */
+  margin-left: 5px; /* Adds space after the word "Hello" */
+  margin-right: 5px; /* Adds space between the logo and the following text */
 }
 
+/* Section for photo */
 .photoofme {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+  flex: 1; /* Allows the photo section to grow and take up available space */
+  display: flex; /* Flexbox layout for aligning the photo */
+  align-items: flex-start; /* Aligns the photo to the top */
+  justify-content: flex-end; /* Aligns the photo to the right */
 }
 
+/* Styling for the photo of the user */
 .photo3 {
-  width: auto;
-  height: 711px;
-  border-radius: 10px;
-  margin-right: 30px;
+  width: auto; /* Auto width for the photo */
+  height: 711px; /* Sets a fixed height for the photo */
+  border-radius: 10px; /* Rounded corners for the photo */
+  margin-right: 30px; /* Adds space from the right side */
+  box-shadow: 4px 4px 0 #333; /* Consistent neo-brutalist shadow */
+  border: 3px solid #000; /* Bold border around image */
 }

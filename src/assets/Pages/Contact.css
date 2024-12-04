@@ -1,102 +1,102 @@
+/* Resetting margin, padding, and box-sizing for all elements to ensure uniform layout across all browsers */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  margin: 0; /* Removing default margin for all elements */
+  padding: 0; /* Removing default padding for all elements */
+  box-sizing: border-box; /* Ensuring that padding and borders are included in element's width/height */
+  font-family: Arial, sans-serif; /* Setting default font to Arial */
 }
 
 /* Full-width contact background with consistent top spacing */
 .contact-background {
-  width: 100%;
-  max-width: 2440px; /* Match max width with other styles */
-  background-color: rgba(249, 245, 242, 1); /* Consistent background color */
-  padding: 68px 68px; /* Adjusted padding to match about.css and works.css */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid #000; /* Consistent border style */
-  box-shadow: 5px 5px 0 #333; /* Shadow similar to works.css */
-  border-radius: 15px; /* Rounded corners */
-  margin-bottom: 68px; /* Extra spacing at the bottom */
+  width: 100%; /* Making the contact background take up the full width of its container */
+  max-width: 2440px; /* Setting maximum width for the background */
+  background-color: rgba(249, 245, 242, 1); /* Setting background color for the contact section */
+  padding: 68px 68px; /* Adding padding to top and sides */
+  display: flex; /* Enabling flexbox layout */
+  flex-direction: column; /* Stacking child elements vertically */
+  align-items: center; /* Center-aligning the child elements horizontally */
+  border: 3px solid #000; /* Adding black border around the contact section */
+  box-shadow: 5px 5px 0 #333; /* Adding shadow around the contact section */
+  border-radius: 15px; /* Rounding corners for the contact section */
+  margin-bottom: 68px; /* Adding space below the contact section */
 }
 
 /* Main container for the contact page */
 .contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1152px;
-  width: 100%;
-  background-color: #ffffff; /* White background for content */
-  padding: 30px;
-  border: 2px solid #000; /* Consistent border style */
-  box-shadow: 3px 3px 0 #333; /* Neo-brutalist shadow */
-  border-radius: 10px;
-  gap: 40px; /* Space between text and form sections */
-  margin-top: 98px;
-  margin-bottom: 10px;
+  display: flex; /* Enabling flexbox layout */
+  justify-content: space-between; /* Spacing out child elements with space in between */
+  align-items: flex-start; /* Aligning child elements to the start of the container */
+  max-width: 1152px; /* Setting maximum width for the container */
+  width: 100%; /* Ensuring the container takes up the full available width */
+  background-color: #ffffff; /* White background color */
+  padding: 30px; /* Adding padding around the content */
+  border: 2px solid #000; /* Adding black border around the container */
+  box-shadow: 3px 3px 0 #333; /* Adding shadow around the container */
+  border-radius: 10px; /* Slightly rounded corners for the container */
+  gap: 40px; /* Adding space between the left and right sections */
+  margin-top: 98px; /* Adding top margin for spacing */
+  margin-bottom: 10px; /* Adding bottom margin for spacing */
 }
 
 /* Left Text Section */
 .contact-text {
-  flex: 1;
+  flex: 1; /* Allowing the text section to take up available space */
 }
 
 .contact-text h1 {
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-size: 36px; /* Large font size for heading */
+  font-weight: 900; /* Making the heading bold */
+  margin-bottom: 20px; /* Adding space below the heading */
 }
 
 .contact-text p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 16px; /* Setting font size for paragraphs */
+  color: #333; /* Dark gray color for text */
+  line-height: 1.6; /* Setting line height for better readability */
+  margin-bottom: 15px; /* Adding space below each paragraph */
 }
 
 /* Right Form Section */
 .contact-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex: 1; /* Allowing the form section to take up available space */
+  display: flex; /* Enabling flexbox layout */
+  flex-direction: column; /* Stacking form fields vertically */
+  gap: 20px; /* Adding space between form fields */
 }
 
 /* Row for paired inputs */
 .input-row {
-  display: flex;
-  gap: 20px;
+  display: flex; /* Enabling flexbox layout for input rows */
+  gap: 20px; /* Adding space between input fields in the row */
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 2px 2px 0 #000; /* Shadow for inputs and textarea */
+  width: 100%; /* Making inputs and textareas take up full width */
+  padding: 15px; /* Adding padding inside the inputs and textareas */
+  font-size: 16px; /* Setting font size for input text */
+  border: 2px solid #000; /* Black border for inputs and textareas */
+  border-radius: 10px; /* Rounded corners for inputs and textareas */
+  box-shadow: 2px 2px 0 #000; /* Shadow effect for inputs and textareas */
 }
 
 .contact-form textarea {
-  height: 100px;
-  resize: none;
+  height: 100px; /* Setting fixed height for textarea */
+  resize: none; /* Disabling manual resizing of the textarea */
 }
 
 .contact-form button {
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #ffcb87;
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 2px 2px 0 #000;
+  padding: 15px; /* Adding padding inside the button */
+  font-size: 18px; /* Setting font size for button text */
+  font-weight: bold; /* Making the button text bold */
+  background-color: #ffcb87; /* Setting light yellow background color */
+  color: #000; /* Black text color */
+  border: 2px solid #000; /* Black border around the button */
+  border-radius: 10px; /* Rounded corners for the button */
+  cursor: pointer; /* Changing cursor to pointer on hover */
+  box-shadow: 2px 2px 0 #000; /* Shadow effect for the button */
 }
 
 .contact-form button:hover {
-  background-color: #f0b45a;
+  background-color: #f0b45a; /* Changing background color when hovering */
 }
-

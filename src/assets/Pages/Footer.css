@@ -1,117 +1,117 @@
+/* Footer Styling */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding-top: 68px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
+  display: flex; /* Using flexbox layout for the footer */
+  justify-content: space-between; /* Distribute content across the footer */
+  align-items: flex-start; /* Align items at the top */
+  width: 100%; /* Full width for the footer */
+  padding-top: 68px; /* Adding space at the top */
+  padding-bottom: 60px; /* Adding space at the bottom */
+  background-color: #ffffff; /* White background for the footer */
 }
 
 /* Left Section Styling */
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex; /* Using flexbox layout for the left section */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between items */
 }
 
 /* Connect Box Styling */
 .connect-box {
-  background-color: #ffcb87;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  box-shadow: 2px 2px 0px 2px #000000;
-  width: 374px;
-  height: 128px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ffcb87; /* Light yellow background */
+  border: 1px solid #000000; /* Black border around the box */
+  border-radius: 20px; /* Rounded corners for the box */
+  box-shadow: 2px 2px 0px 2px #000000; /* Shadow effect for the box */
+  width: 374px; /* Fixed width for the connect box */
+  height: 128px; /* Fixed height for the connect box */
+  display: flex; /* Using flexbox layout for centering */
+  align-items: center; /* Centering content vertically */
+  justify-content: center; /* Centering content horizontally */
 }
 
 .connect-text {
-  color: #000000;
-  font-family: "Inter", Helvetica;
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-  text-align: left;
-  margin-top: 20px;
+  color: #000000; /* Black text color */
+  font-family: "Inter", Helvetica; /* Font family for the text */
+  font-size: 36px; /* Font size for the text */
+  font-weight: 400; /* Normal font weight */
+  text-align: center; /* Center text alignment */
+  text-align: left; /* Align text to the left */
+  margin-top: 20px; /* Space above the text */
 }
 
 .project-info {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  max-width: 756px;
-  text-align: left;
-  padding-top: 68px;
+  color: #000000; /* Black text color */
+  font-family: "Inter-Regular", Helvetica; /* Regular font weight for project info */
+  font-size: 15px; /* Smaller font size for project info */
+  font-weight: 400; /* Normal font weight */
+  max-width: 756px; /* Max width for the text */
+  text-align: left; /* Align text to the left */
+  padding-top: 68px; /* Space above the project info */
 }
 
 .footer-note {
-  color: #000000;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 32px;
-  font-weight: 400;
-  margin-top: 68px;
-  margin-bottom: -16px;
+  color: #000000; /* Black text color */
+  font-family: "Inter-Medium", Helvetica; /* Medium font weight */
+  font-size: 32px; /* Font size for the footer note */
+  font-weight: 400; /* Normal font weight */
+  margin-top: 68px; /* Space above the footer note */
+  margin-bottom: -16px; /* Negative margin to reduce space below */
 }
 
 /* Footer Links Styling */
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 25px;
-  color: #000000;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 24px;
+  display: flex; /* Using flexbox layout for footer links */
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-start; /* Align links to the left */
+  gap: 25px; /* Space between each link */
+  color: #000000; /* Black text color */
+  font-family: "Inter-Medium", Helvetica; /* Medium font weight for links */
+  font-size: 24px; /* Font size for links */
 }
 
 .footer-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #000000;
-  gap: 20px;
-  font-size: 28px;
+  display: flex; /* Using flexbox for each link */
+  align-items: center; /* Align icon and text */
+  text-decoration: none; /* No underline for links */
+  color: #000000; /* Black text color */
+  gap: 20px; /* Space between icon and text */
+  font-size: 28px; /* Font size for footer link */
 }
 
 .footer-icon {
-  width: 40px;
-  height: 40px;
+  width: 40px; /* Fixed width for the icons */
+  height: 40px; /* Fixed height for the icons */
 }
 
 /* Hover Animations in Footer */
 
 /* Scale-Up on Hover for Connect Box */
 .connect-box:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transform: scale(1.05); /* Slightly scale up the connect box */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
 /* Slight Color Change and Scale on Hover for Footer Links */
 .footer-link {
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for scale and color */
 }
 
 .footer-link:hover {
-  transform: scale(1.1);
-  color: #e0a845; /* Adds a warm tone on hover */
+  transform: scale(1.1); /* Scale up the link */
+  color: #e0a845; /* Change color on hover */
 }
 
 /* Scale-Up on Hover for Footer Note */
 .footer-note:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
+  transform: scale(1.03); /* Slight scale effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
 /* Footer Icon Hover Effect */
 .footer-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth transition for icon scaling */
 }
 
 .footer-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Scale up the icon */
 }
-
